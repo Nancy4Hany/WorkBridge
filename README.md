@@ -34,7 +34,7 @@ Instructions for installation go here.
 
 Instructions for usage go here.
 
-## Contributing
+## Team Work 
 
 Instructions for contributing go here.
 
