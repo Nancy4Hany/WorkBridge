@@ -26,18 +26,57 @@
 
 
 description goes here
+
+## Technologies
+<div align="center"> 
+
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/springio-icon.svg" alt="spring" height="50" /> 
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="java" height="50" /> 
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/tailwindcss.svg" alt="tailwind" height="50" />  
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="node" height="50" /> 
+<img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="git" height="50" /> 
+
+</div>  
+
 ## Installation
 
-Instructions for installation go here.
+We have Divided our project into two sub projects, one for the API and one for the FrontEnd part. 
+### _setting up the frontend project_ <br>
+### :hammer: ReactJs settup 
+:one: Make sure you have installed node js. If not, install it from here https://nodejs.org/en/download <br>
+:two: Also Install npm by running the following command: `npm install` <br>
+:three: type `cd WorkBridge-ui` and then run `npm install react-scripts` <br>
+_if you want to run the ReactJs app to test if it's working_ , type `npm start` <br>
 
-## Usage
+### :hammer: TailwindCSS settup 
+<!-- 
+:one: hey <br>
+:two: hey <br>
+:three: hey <br>
+-->
+to be done  <br>
 
-Instructions for usage go here.
+### :hammer: Mui Library settup 
+to be done <br> 
+
+### :hammer: Fontawesome settup for ReactJs 
+to be done <br> 
+
+## GitHub Commands
+to be done 
+
 
 ## Team Work 
 
-Instructions for contributing go here.
+### conventions and Rules 
+to be done
+
+### Jira collaboration 
+not yet
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+not yet
+
+<!-- This project is licensed under the MIT License - see the LICENSE file for details. -->
