@@ -25,9 +25,9 @@
 [linkedin-url]: https://www.linkedin.com/in/nancyhany/
 
 
-description goes here
+WORKBREDGE is a hiring platform similar to LinkedIn that matches job seekers' profiles to recruiters and organizations. This project is developed by me and my team for a university project in the advanced SWE course. 
 
-:computer: ## Technologies
+ ## :computer: Technologies
 <div align="center"> 
 
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/springio-icon.svg" alt="spring" height="50" /> 
@@ -39,17 +39,17 @@ description goes here
 
 </div>  
 
-:arrow_down: ## Installation
+## :arrow_down: Installation
 
 We have Divided our project into two sub projects, one for the API and one for the FrontEnd part. 
 ### _setting up the frontend project_ <br>
-### :hammer: ReactJs settup 
+### :hammer: _ReactJs settup_ 
 :one: Make sure you have installed node js. If not, install it from here https://nodejs.org/en/download <br>
 :two: Also Install npm by running the following command: `npm install` <br>
 :three: type `cd WorkBridge-ui` and then run `npm install react-scripts` <br>
 _if you want to run the ReactJs app to test if it's working_ , type `npm start` <br>
 
-### :hammer: TailwindCSS settup 
+### :hammer: _TailwindCSS settup_ 
 <!-- 
 :one: hey <br>
 :two: hey <br>
@@ -57,25 +57,25 @@ _if you want to run the ReactJs app to test if it's working_ , type `npm start` 
 -->
 to be done  <br>
 
-### :hammer: Mui Library settup 
+### :hammer: _Mui Library settup_
 to be done <br> 
 
-### :hammer: Fontawesome settup for ReactJs 
+### :hammer: _Fontawesome settup for ReactJs_ 
 to be done <br> 
 
-:octocat: ## Git & GitHub 
+ ## :octocat: Git & GitHub 
 to be done 
 
 
-:eyeglasses: ## Team Work 
+## :eyeglasses: Team Work 
 
-### conventions and Rules 
+### _conventions and Rules_ 
 to be done
 
-### Jira collaboration 
+### _Jira collaboration_
 not yet
 
-:white_check_mark: ## License
+## :white_check_mark: License
 
 not yet
 
