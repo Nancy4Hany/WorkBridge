@@ -27,7 +27,7 @@
 
 description goes here
 
-## Technologies
+:computer: ## Technologies
 <div align="center"> 
 
 <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/springio-icon.svg" alt="spring" height="50" /> 
@@ -39,7 +39,7 @@ description goes here
 
 </div>  
 
-## Installation
+:arrow_down: ## Installation
 
 We have Divided our project into two sub projects, one for the API and one for the FrontEnd part. 
 ### _setting up the frontend project_ <br>
@@ -63,11 +63,11 @@ to be done <br>
 ### :hammer: Fontawesome settup for ReactJs 
 to be done <br> 
 
-## GitHub Commands
+:octocat: ## Git & GitHub 
 to be done 
 
 
-## Team Work 
+:eyeglasses: ## Team Work 
 
 ### conventions and Rules 
 to be done
@@ -75,7 +75,7 @@ to be done
 ### Jira collaboration 
 not yet
 
-## License
+:white_check_mark: ## License
 
 not yet
 
