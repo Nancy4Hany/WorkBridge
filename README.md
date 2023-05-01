@@ -62,17 +62,17 @@ to be done <br>
 
 ### :hammer: _Fontawesome settup for ReactJs_ 
 :one: <br> 
-`npm i --save @fortawesome/fontawesome-svg-core
-npm install --save @fortawesome/free-solid-svg-icons
-npm install --save @fortawesome/react-fontawesome`
+`npm i --save @fortawesome/fontawesome-svg-core` <br>
+`npm install --save @fortawesome/free-solid-svg-icons` <br>
+`npm install --save @fortawesome/react-fontawesome` <br>
 
 :two: in the file you're working on, type: <br>
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faCoffee} from "@fortawesome/free-solid-svg-icons"
+```[import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faCoffee} from "@fortawesome/free-solid-svg-icons"]```
 
-_facoffee is just an example you can replace it with your desired icon from fontawesome icons list (https://fontawesome.com/icons)_
- :up: view the desired icon , select react, select individual import
-_ you can easily change the colors using tailwind_
+_facoffee is just an example you can replace it with your desired icon from fontawesome icons list (https://fontawesome.com/icons)_ <br>
+ :up: view the desired icon , select react, select individual import <br>
+_you can easily change the colors using tailwind_
  <br> 
 
  ## :octocat: Git & GitHub 
