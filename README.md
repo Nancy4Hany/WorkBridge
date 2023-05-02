@@ -67,8 +67,10 @@ to be done <br>
 `npm install --save @fortawesome/react-fontawesome` <br>
 
 :two: in the file you're working on, type: <br>
-```[import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faCoffee} from "@fortawesome/free-solid-svg-icons"]```
+```javascript
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faCoffee} from "@fortawesome/free-solid-svg-icons"
+```
 
 _facoffee is just an example you can replace it with your desired icon from fontawesome icons list (https://fontawesome.com/icons)_ <br>
  :up: view the desired icon , select react, select individual import <br>
