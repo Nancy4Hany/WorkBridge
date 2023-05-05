@@ -57,12 +57,12 @@ to be done
 ## :eyeglasses: Team Work 
 
 ### _conventions and Rules_  ####_kindly read it carefully and apply each point in your tasks_
-[*] build an organzied OCL document for your task before starting it 
-[*] work only on your task files and folders and be organized ( don't touch other tasks and folders and avoid conflicts ) 
-[*] use the correct naming conventions in your code 
-[*] use Aspect Oriented programming as much as needed in your code 
-[*] review your code after finishing it and check if it needs any kind of enhancements ( is the code clean ?, can it be more clean?, did i use naming conventions?....)
-[*] build ReactJs components for your tasks and be aware of React naming conventions 
+- build an organzied OCL document for your task before starting it 
+- work only on your task files and folders and be organized ( don't touch other tasks and folders and avoid conflicts ) 
+- use the correct naming conventions in your code 
+- use Aspect Oriented programming as much as needed in your code 
+- review your code after finishing it and check if it needs any kind of enhancements ( is the code clean ?, can it be more clean?, did i use naming conventions?....)
+- build ReactJs components for your tasks and be aware of React naming conventions 
 
 ### _Jira collaboration_
 [*] each sprint (meeting) we will be doing a peer review on each others code 
