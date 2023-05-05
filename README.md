@@ -45,37 +45,10 @@ We have Divided our project into two sub projects, one for the API and one for t
 ### _setting up the frontend project_ <br>
 ### :hammer: _ReactJs settup_ 
 :one: Make sure you have installed node js. If not, install it from here https://nodejs.org/en/download <br>
-:two: Also Install npm by running the following command: `npm install` <br>
-:three: type `cd WorkBridge-ui` and then run `npm install react-scripts` <br>
-_if you want to run the ReactJs app to test if it's working_ , type `npm start` <br>
+:two: type `cd WorkBridge-ui` and then Install npm by running the following command: `npm install` <br>
+:three: run `npm install react-scripts` <br>
+_if you want to run the ReactJs app, type `npm start` <br>
 
-### :hammer: _TailwindCSS settup_ 
-<!-- 
-:one: hey <br>
-:two: hey <br>
-:three: hey <br>
--->
-to be done  <br>
-
-### :hammer: _Mui Library settup_
-to be done <br> 
-
-### :hammer: _Fontawesome settup for ReactJs_ 
-:one: <br> 
-`npm i --save @fortawesome/fontawesome-svg-core` <br>
-`npm install --save @fortawesome/free-solid-svg-icons` <br>
-`npm install --save @fortawesome/react-fontawesome` <br>
-
-:two: in the file you're working on, type: <br>
-```javascript
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faCoffee} from "@fortawesome/free-solid-svg-icons"
-```
-
-_facoffee is just an example you can replace it with your desired icon from fontawesome icons list (https://fontawesome.com/icons)_ <br>
- :up: view the desired icon , select react, select individual import <br>
-_you can easily change the colors using tailwind_
- <br> 
 
  ## :octocat: Git & GitHub 
 to be done 
