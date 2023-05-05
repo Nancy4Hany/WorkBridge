@@ -67,7 +67,8 @@ to be done
 
 ### _Jira collaboration_
 - each sprint (meeting) we will be doing a peer review on each others code 
-- each sprint (meeting) we will push our work to the meant branches <br>
+- each sprint (meeting) we will push our work to the meant branches/
+- each sprint (meeting) we will be estimating the tasks duration, effort level by using the poker cards way <br>
 ..to be completed..
 
 ## :white_check_mark: License
