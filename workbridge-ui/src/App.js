@@ -18,7 +18,6 @@ function App() {
      <FontAwesomeIcon  icon={faCoffee}></FontAwesomeIcon>
      <span> this coffee is brought to you by fontAwesome</span>
     </div>
-
   );
 }
 
