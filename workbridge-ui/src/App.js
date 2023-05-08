@@ -22,8 +22,6 @@ function App() {
    <main className='App'>
         <Signup/>
     </main>
-  
-  );
 }
 
 export default App;
