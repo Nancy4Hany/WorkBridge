@@ -1,4 +1,4 @@
-package com.example.workbridge.workbridge;
+package com.example.workbridge;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
