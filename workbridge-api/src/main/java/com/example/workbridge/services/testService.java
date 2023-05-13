@@ -1,4 +1,4 @@
-package com.example.workbridge.workbridge.services;
+package com.example.workbridge.services;
 
 public class testService {
     

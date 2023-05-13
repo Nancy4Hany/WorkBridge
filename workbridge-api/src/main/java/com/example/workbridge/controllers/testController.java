@@ -1,4 +1,4 @@
-package com.example.workbridge.workbridge.controllers;
+package com.example.workbridge.controllers;
 
 public class testController {
     

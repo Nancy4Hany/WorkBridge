@@ -1,4 +1,4 @@
-package com.example.workbridge.workbridge.repositories;
+package com.example.workbridge.repositories;
 
 public class testRepository {
     

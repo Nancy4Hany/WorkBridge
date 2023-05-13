@@ -1,4 +1,4 @@
-package com.example.workbridge.workbridge.models;
+package com.example.workbridge.models;
 
 public class test {
     //
