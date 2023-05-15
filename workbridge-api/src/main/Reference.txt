@@ -1,0 +1,10 @@
+use @entity in your model file when you want to be created as a table in the defined database 
+use @id when you want to define the id in the code as an id 
+use @GeneratedValue(strategy = GenerationType.Auto) 3shan t5ly l id auto generated w w2tha 5ly l data type bta3o long -> fel model
+every model has a table, every table has a repository file
+before repository class we shoukd write @repository
+repository class is interface extends JpaRepositor<modelname,long> .. long indicates id
+@autowired in controller
+-> before loggingservice object 
+-> before repository object 
+0:18:08 timestamp
