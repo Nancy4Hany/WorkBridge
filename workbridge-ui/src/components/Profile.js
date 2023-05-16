@@ -1,3 +1,6 @@
+import React from 'react';
+export default function Profile() {
+    return (
 <div id="profile container">
 <img class="w-40 h-18 rounded-full" src="../profiletest.png" alt="Rounded avatar"/>
 <div class="w-full md:w-9/12 mx-2 h-64">
@@ -94,3 +97,5 @@
     </div>
 </div>
 </div>
+    )
+}

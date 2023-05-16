@@ -7,7 +7,8 @@
 import { Button } from '@mui/material';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faCoffee} from "@fortawesome/free-solid-svg-icons"
-import Signup from './Signup';
+//import Signup from './Signup';
+import Profile from './components/Profile';
 function App() {
   return (
     // <div>
@@ -19,9 +20,12 @@ function App() {
     //  <FontAwesomeIcon  icon={faCoffee}></FontAwesomeIcon>
     //  <span> this coffee is brought to you by fontAwesome</span>
     // </div>
-   <main className='App'>
-        <Signup/>
-    </main>
+   //<main className='App'>
+     //   <Signup/>
+    //</main>
+
+    <Profile/>
+  )
 }
 
 export default App;
