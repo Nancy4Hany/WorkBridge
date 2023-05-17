@@ -51,7 +51,14 @@ _if you want to run the ReactJs app, type `npm start` <br>
 
 
  ## :octocat: Git & GitHub 
-to be done 
+### adding your work from the working branch area to the remote branch 
+`git checkout <your-branch-name>` <br> 
+Merge any changes from your working branch into the branch you want to push to using `git merge <working-branch>` <br> 
+if there are merge conflicts arised resolve them. <br>
+now you can push your work to the meant branch <br>
+:one: `git add .`<br>
+:two: `git commit -m "<your-message>"` make sure to copy the commmit structure from Jira <br>
+:three: `git push` <br>
 
 
 ## :eyeglasses: Team Work 
