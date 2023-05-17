@@ -74,7 +74,7 @@ _if you want to run the ReactJs app, type `npm start` <br>
 
 ### _Jira collaboration_
 - each sprint (meeting) we will be doing a peer review on each others code 
-- each sprint (meeting) we will push our work to the meant branches/
+- each sprint (meeting) we will push our work to the meant branches and merging them with the main branch ( deliver the version ) 
 - each sprint (meeting) we will be estimating the tasks duration, effort level by using the poker cards way <br>
 ..to be completed..
 
