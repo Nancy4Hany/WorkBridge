@@ -1,5 +1,10 @@
-import React from 'react';
+import React from "react";
+import UserService from "../services/UserService";
+
 export default function Profile() {
+
+        UserService.getUser();
+
     return (
 <div id="profile container">
 <img class="w-40 h-18 rounded-full" src="../profiletest.png" alt="Rounded avatar"/>
@@ -18,6 +23,7 @@ export default function Profile() {
         <div class="text-gray-700">
             <div class="grid md:grid-cols-2 text-sm">
                 <div class="grid grid-cols-2">
+                    
                     <div class="px-4 py-2 font-semibold">First Name</div>
                     <div class="px-4 py-2">Hamza</div>
                 </div>
