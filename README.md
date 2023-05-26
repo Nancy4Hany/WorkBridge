@@ -2,7 +2,7 @@
   <img src="https://media.giphy.com/media/h2NRnIIEw6tv9emZSc/giphy.gif" width="380" height="380" alt="Giphy GIF">
 </p>
 
-# WORKBREDGE
+# WORKBRIDGE
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
