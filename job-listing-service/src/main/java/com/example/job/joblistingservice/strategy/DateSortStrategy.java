@@ -55,4 +55,6 @@ class DateComparator implements Comparator<JobPostDTO> {
             return jobPost1.getDate().compareTo(jobPost2.getDate());
         }
     }
+
+    //sort strategy
 }
