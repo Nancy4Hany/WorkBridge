@@ -2,7 +2,7 @@
   <img src="https://media.giphy.com/media/h2NRnIIEw6tv9emZSc/giphy.gif" width="380" height="380" alt="Giphy GIF">
 </p>
 
-# WORKBREDGE
+# WORKBRIDGE
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -45,49 +45,38 @@ We have Divided our project into two sub projects, one for the API and one for t
 ### _setting up the frontend project_ <br>
 ### :hammer: _ReactJs settup_ 
 :one: Make sure you have installed node js. If not, install it from here https://nodejs.org/en/download <br>
-:two: Also Install npm by running the following command: `npm install` <br>
-:three: type `cd WorkBridge-ui` and then run `npm install react-scripts` <br>
-_if you want to run the ReactJs app to test if it's working_ , type `npm start` <br>
+:two: type `cd WorkBridge-ui` and then Install npm by running the following command: `npm install` <br>
+:three: run `npm install react-scripts` <br>
+_if you want to run the ReactJs app, type `npm start` <br>
 
-### :hammer: _TailwindCSS settup_ 
-<!-- 
-:one: hey <br>
-:two: hey <br>
-:three: hey <br>
--->
-to be done  <br>
-
-### :hammer: _Mui Library settup_
-to be done <br> 
-
-### :hammer: _Fontawesome settup for ReactJs_ 
-:one: <br> 
-`npm i --save @fortawesome/fontawesome-svg-core` <br>
-`npm install --save @fortawesome/free-solid-svg-icons` <br>
-`npm install --save @fortawesome/react-fontawesome` <br>
-
-:two: in the file you're working on, type: <br>
-```javascript
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faCoffee} from "@fortawesome/free-solid-svg-icons"
-```
-
-_facoffee is just an example you can replace it with your desired icon from fontawesome icons list (https://fontawesome.com/icons)_ <br>
- :up: view the desired icon , select react, select individual import <br>
-_you can easily change the colors using tailwind_
- <br> 
 
  ## :octocat: Git & GitHub 
-to be done 
+### adding your work from the working branch area to the remote branch 
+- `git checkout <your-branch-name>` <br> 
+- Merge any changes from your working branch into the branch you want to push to using `git merge <working-branch>` <br> 
+- if there are merge conflicts arised resolve them. <br>
+- now you can push your work to the meant branch <br>
+:one: `git add .`<br>
+:two: `git commit -m "<your-message>"` make sure to copy the commit message structure from Jira <br>
+:three: `git push` <br>
 
 
 ## :eyeglasses: Team Work 
 
-### _conventions and Rules_ 
-to be done
+### _conventions and Rules_  
+#### _kindly read it carefully and apply each point in your tasks_
+- build an organzied OCL document for your task before starting it 
+- work only on your task files and folders and be organized ( don't touch other tasks and folders and avoid conflicts ) 
+- use the correct naming conventions in your code 
+- use Aspect Oriented programming as much as needed in your code 
+- review your code after finishing it and check if it needs any kind of enhancements ( is the code clean ?, can it be more clean?, did i use naming conventions?....)
+- build ReactJs components for your tasks and be aware of React naming conventions 
 
 ### _Jira collaboration_
-not yet
+- each sprint (meeting) we will be doing a peer review on each others code 
+- each sprint (meeting) we will push our work to the meant branches and merging them with the main branch ( deliver the version ) 
+- each sprint (meeting) we will be estimating the tasks duration, effort level by using the poker cards way <br>
+..to be completed..
 
 ## :white_check_mark: License
 
