@@ -32,11 +32,11 @@ public class UserController {
     public ResponseEntity createUser(@RequestBody Map<String, String> body) {
         User user = new User();
         user.setEmail(body.get("Email"));
-        user.setFirst_name(body.get("First name"));
-        user.setLast_name(body.get("Last name"));
+        user.setFirstName(body.get("First name"));
+        user.setLastName(body.get("Last name"));
         user.setPassword(body.get("Password"));
-        user.setPhone_number(body.get("Phone"));
-        user.setProfile_picture(body.get("Profile picture"));
+        user.setPhoneNumber(body.get("Phone"));
+        user.setProfilepPicture(body.get("Profile picture"));
         user.setRole(body.get("Role"));
         user.setAddress(body.get("Address"));
         user.setBio(body.get("Bio"));
@@ -44,7 +44,7 @@ public class UserController {
         String dateOfBirthStr = body.get("Date of birth");
         LocalDate dateOfBirth = LocalDate.parse(dateOfBirthStr);
         Date dateOfBirthAsDate = Date.valueOf(dateOfBirth);
-        user.setDate_of_birth(dateOfBirthAsDate);
+        user.setDateOfBirth(dateOfBirthAsDate);
 
         this.userRepository.save(user);
         return new ResponseEntity(user, HttpStatus.CREATED);
@@ -60,11 +60,11 @@ public class UserController {
         }
 
         user.setEmail(body.get("Email"));
-        user.setFirst_name(body.get("First name"));
-        user.setLast_name(body.get("Last name"));
+        user.setFirstName(body.get("First name"));
+        user.setLastName(body.get("Last name"));
         user.setPassword(body.get("Password"));
-        user.setPhone_number(body.get("Phone"));
-        user.setProfile_picture(body.get("Profile picture"));
+        user.setPhoneNumber(body.get("Phone"));
+        user.setProfilepPicture(body.get("Profile picture"));
         user.setRole(body.get("Role"));
         user.setAddress(body.get("Address"));
         user.setBio(body.get("Bio"));
@@ -72,7 +72,7 @@ public class UserController {
         String dateOfBirthStr = body.get("Date of birth");
         LocalDate dateOfBirth = LocalDate.parse(dateOfBirthStr);
         Date dateOfBirthAsDate = Date.valueOf(dateOfBirth);
-        user.setDate_of_birth(dateOfBirthAsDate);
+        user.setDateOfBirth(dateOfBirthAsDate);
 
         this.userRepository.save(user);
 

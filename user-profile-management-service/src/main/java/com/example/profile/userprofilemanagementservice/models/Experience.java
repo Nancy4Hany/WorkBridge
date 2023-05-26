@@ -16,9 +16,10 @@ public class Experience {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String company_name;
-    private Date start_date;
-    private Date end_date;
+    private String companyName;
+    private String jobTitle;
+    private Date startDate;
+    private Date endDate;
 
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
@@ -40,28 +41,36 @@ public class Experience {
         this.id = id;
     }
 
-    public String getCompany_name() {
-        return company_name;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setCompany_name(String company_name) {
-        this.company_name = company_name;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
-    public Date getStart_date() {
-        return start_date;
+    public String getJobTitle() {
+        return jobTitle;
     }
 
-    public void setStart_date(Date start_date) {
-        this.start_date = start_date;
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
     }
 
-    public Date getEnd_date() {
-        return end_date;
+    public Date getStartDate() {
+        return startDate;
     }
 
-    public void setEnd_date(Date end_date) {
-        this.end_date = end_date;
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
     }
 
 

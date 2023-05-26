@@ -36,17 +36,18 @@ public class EducationController {
     @PostMapping("")
     public ResponseEntity addEducation(@RequestBody Map<String, String> body) {
         Education education = new Education();
-        education.setSchool_name(body.get("school name"));
+        education.setSchoolName(body.get("school name"));
+        education.setMajor(body.get("Major"));
 
         String startDateStr = body.get("start_date");
         LocalDate startDate = LocalDate.parse(startDateStr);
         Date startDateAsDate = Date.valueOf(startDate);
-        education.setStart_date(startDateAsDate);
+        education.setStartDate(startDateAsDate);
 
         String endDateStr = body.get("end_date");
         LocalDate endDate = LocalDate.parse(endDateStr);
         Date endDateAsDate = Date.valueOf(endDate);
-        education.setEnd_date(endDateAsDate);
+        education.setEndDate(endDateAsDate);
 
         Long userId = Long.valueOf(body.get("user_id"));
         User user = userRepository.findById(userId).orElseThrow(() -> new EntityNotFoundException("User not found"));

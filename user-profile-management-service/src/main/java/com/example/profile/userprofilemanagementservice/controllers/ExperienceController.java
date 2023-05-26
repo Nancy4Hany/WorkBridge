@@ -35,27 +35,28 @@ public class ExperienceController {
 
     @PostMapping("")
     public ResponseEntity addExperience(@RequestBody Map<String, String> body) {
-        System.out.println("name " + body.get("company name"));
-        System.out.println("start " + body.get("start_date"));
-        System.out.println("end " + body.get("end_date"));
-        Experience experience = new Experience();
-        experience.setCompany_name(body.get("company name"));
 
+        Experience experience = new Experience();
+
+        experience.setCompanyName(body.get("company name"));
+
+        experience.setJobTitle(body.get("Job title"));
+        
         String startDateStr = body.get("start_date");
         System.out.println(startDateStr);
         LocalDate startDate = LocalDate.parse(startDateStr);
         Date startDateAsDate = Date.valueOf(startDate);
-        experience.setStart_date(startDateAsDate);
+        experience.setStartDate(startDateAsDate);
 
         String endDateStr = body.get("end_date");
         LocalDate endDate = LocalDate.parse(endDateStr);
         Date endDateAsDate = Date.valueOf(endDate);
-        experience.setEnd_date(endDateAsDate);
+        experience.setEndDate(endDateAsDate);
 
         Long userId = Long.valueOf(body.get("user_id"));
         User user = userRepository.findById(userId).orElseThrow(() -> new EntityNotFoundException("User not found"));
         experience.setUser(user);
-
+        
         this.experienceRepository.save(experience);
         return new ResponseEntity(experience, HttpStatus.CREATED);
     }

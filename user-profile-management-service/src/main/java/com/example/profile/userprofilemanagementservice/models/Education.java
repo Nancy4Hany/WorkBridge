@@ -15,13 +15,22 @@ public class Education {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String school_name;
-    private Date start_date;
-    private Date end_date;
-
+    private String schoolName;
+    private String major;
+    private Date startDate;
+    private Date endDate;
     @ManyToOne
     @JoinColumn(name="user_id", referencedColumnName = "id")
     private User user;
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
 
     public Long getId() {
         return id;
@@ -31,28 +40,29 @@ public class Education {
         this.id = id;
     }
 
-    public String getSchool_name() {
-        return school_name;
+
+    public String getSchoolName() {
+        return schoolName;
     }
 
-    public void setSchool_name(String school_name) {
-        this.school_name = school_name;
+    public void setSchoolName(String schoolName) {
+        this.schoolName = schoolName;
     }
 
-    public Date getStart_date() {
-        return start_date;
+    public Date getStartDate() {
+        return startDate;
     }
 
-    public void setStart_date(Date start_date) {
-        this.start_date = start_date;
+    public void setStartDate(Date startDate) {
+        this.startDate = startDate;
     }
 
-    public Date getEnd_date() {
-        return end_date;
+    public Date getEndDate() {
+        return endDate;
     }
 
-    public void setEnd_date(Date end_date) {
-        this.end_date = end_date;
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
     }
 
     public User getUser() {
