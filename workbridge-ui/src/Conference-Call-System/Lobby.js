@@ -13,7 +13,7 @@ export default function Lobby() {
     
     form.addEventListener('submit', (e) => {
         e.preventDefault()
-    
+    //lobby
         sessionStorage.setItem('display_name', e.target.name.value)
     
         let inviteCode = e.target.room.value
