@@ -1,0 +1,29 @@
+package com.example.job.joblistingservice.DTO;
+
+public class RecruiterDTO {
+
+    private Long id;
+    private String name;
+    private String email;
+
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String recruiterName) {
+        this.name = recruiterName;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String recruiterEmail) {
+        this.email = recruiterEmail;
+    }
+    
+    // Constructors, getters, and setters
+}
