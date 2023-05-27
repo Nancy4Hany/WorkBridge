@@ -8,15 +8,20 @@
 		<version>2.7.12</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.profile</groupId>
-	<artifactId>user-profile-management-service</artifactId>
+	<groupId>com.example.job_listing_event_bus</groupId>
+	<artifactId>job_listing_event_bus</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>user-profile-management-service</name>
+	<name>job_listing_event_bus</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>20</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+	
+
+
+
+		
 	<!-- starter -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

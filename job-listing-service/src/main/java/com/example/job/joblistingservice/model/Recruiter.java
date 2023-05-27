@@ -10,7 +10,6 @@ import javax.persistence.Table;
 public class Recruiter {
 
     @Id
-    // @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
@@ -34,5 +33,5 @@ public class Recruiter {
         this.email = email;
     }
 
-    // Constructors, getters, and setters
+   
 }

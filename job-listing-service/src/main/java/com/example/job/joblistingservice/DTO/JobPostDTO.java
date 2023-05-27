@@ -7,7 +7,6 @@ public class JobPostDTO {
     private Long id;
     private String title;
     private Date date; 
-   
     private String description;
     private CompanyDTO company;
     private RecruiterDTO recruiter;

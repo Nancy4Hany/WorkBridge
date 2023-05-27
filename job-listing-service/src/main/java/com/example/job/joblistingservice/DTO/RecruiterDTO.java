@@ -1,5 +1,8 @@
 package com.example.job.joblistingservice.DTO;
 
+import lombok.Data;
+
+@Data
 public class RecruiterDTO {
 
     private Long id;

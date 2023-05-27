@@ -38,6 +38,7 @@ public class RecruiterController {
     public RecruiterDTO createRecruiter(@RequestBody RecruiterDTO recruiterDTO) {
         return recruiterService.createRecruiter(recruiterDTO);
     }
+    
 
     @PutMapping("/{id}")
     public RecruiterDTO updateRecruiter(@PathVariable Long id, @RequestBody RecruiterDTO recruiterDTO) {
