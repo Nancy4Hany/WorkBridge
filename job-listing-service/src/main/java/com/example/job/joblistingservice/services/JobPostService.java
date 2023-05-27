@@ -15,6 +15,7 @@ import com.example.job.joblistingservice.model.Company;
 import com.example.job.joblistingservice.model.JobPost;
 import com.example.job.joblistingservice.model.Recruiter;
 import com.example.job.joblistingservice.repositories.JobPostRepository;
+
 @Service
 public class JobPostService {
 
@@ -22,6 +23,25 @@ public class JobPostService {
 
     public JobPostService(JobPostRepository jobPostRepository) {
         this.jobPostRepository = jobPostRepository;
+    }
+
+    public JobPostDTO searchJobs(String search) {
+        Optional<JobPost> posts = jobPostRepository.findByTitleOrDescriptionContaining(search, search);
+        if (posts.isPresent()) {
+            JobPost jobPost = posts.get();
+            JobPostDTO jobPostDTO = new JobPostDTO();
+            jobPostDTO.setId(jobPost.getId());
+            jobPostDTO.setTitle(jobPost.getTitle());
+            jobPostDTO.setDescription(jobPost.getDescription());
+            // Assuming the associated entities (Category, Company, Recruiter) have appropriate DTO classes
+            jobPostDTO.setCategory(convertToCategoryDTO(jobPost.getCategory()));
+            jobPostDTO.setCompany(convertToCompanyDTO(jobPost.getCompany()));
+            jobPostDTO.setRecruiter(convertToRecruiterDTO(jobPost.getRecruiter()));
+            // Add any additional properties as needed
+    
+            return jobPostDTO;
+        }
+        return null; //or throw an exception if not found
     }
 
     public List<JobPostDTO> getAllJobPosts() {
@@ -32,7 +52,8 @@ public class JobPostService {
             jobPostDTO.setId(jobPost.getId());
             jobPostDTO.setTitle(jobPost.getTitle());
             jobPostDTO.setDescription(jobPost.getDescription());
-            // Assuming the associated entities (Category, Company, Recruiter) have appropriate DTO classes
+            // Assuming the associated entities (Category, Company, Recruiter) have
+            // appropriate DTO classes
             jobPostDTO.setCategory(convertToCategoryDTO(jobPost.getCategory()));
             jobPostDTO.setCompany(convertToCompanyDTO(jobPost.getCompany()));
             jobPostDTO.setRecruiter(convertToRecruiterDTO(jobPost.getRecruiter()));
@@ -46,7 +67,8 @@ public class JobPostService {
         JobPost jobPost = new JobPost();
         jobPost.setTitle(jobPostDTO.getTitle());
         jobPost.setDescription(jobPostDTO.getDescription());
-        // Assuming the associated entities (Category, Company, Recruiter) have appropriate models
+        // Assuming the associated entities (Category, Company, Recruiter) have
+        // appropriate models
         jobPost.setCategory(convertToCategoryModel(jobPostDTO.getCategory()));
         jobPost.setCompany(convertToCompanyModel(jobPostDTO.getCompany()));
         jobPost.setRecruiter(convertToRecruiterModel(jobPostDTO.getRecruiter()));
@@ -57,7 +79,8 @@ public class JobPostService {
         savedJobPostDTO.setId(savedJobPost.getId());
         savedJobPostDTO.setTitle(savedJobPost.getTitle());
         savedJobPostDTO.setDescription(savedJobPost.getDescription());
-        // Assuming the associated entities (Category, Company, Recruiter) have appropriate DTO classes
+        // Assuming the associated entities (Category, Company, Recruiter) have
+        // appropriate DTO classes
         savedJobPostDTO.setCategory(convertToCategoryDTO(savedJobPost.getCategory()));
         savedJobPostDTO.setCompany(convertToCompanyDTO(savedJobPost.getCompany()));
         savedJobPostDTO.setRecruiter(convertToRecruiterDTO(savedJobPost.getRecruiter()));
@@ -74,7 +97,8 @@ public class JobPostService {
             jobPostDTO.setId(jobPost.getId());
             jobPostDTO.setTitle(jobPost.getTitle());
             jobPostDTO.setDescription(jobPost.getDescription());
-            // Assuming the associated entities (Category, Company, Recruiter) have appropriate DTO classes
+            // Assuming the associated entities (Category, Company, Recruiter) have
+            // appropriate DTO classes
             jobPostDTO.setCategory(convertToCategoryDTO(jobPost.getCategory()));
             jobPostDTO.setCompany(convertToCompanyDTO(jobPost.getCompany()));
             jobPostDTO.setRecruiter(convertToRecruiterDTO(jobPost.getRecruiter()));
@@ -91,7 +115,8 @@ public class JobPostService {
             JobPost jobPost = jobPostOptional.get();
             jobPost.setTitle(jobPostDTO.getTitle());
             jobPost.setDescription(jobPostDTO.getDescription());
-            // Assuming the associated entities (Category, Company, Recruiter) have appropriate models
+            // Assuming the associated entities (Category, Company, Recruiter) have
+            // appropriate models
             jobPost.setCategory(convertToCategoryModel(jobPostDTO.getCategory()));
             jobPost.setCompany(convertToCompanyModel(jobPostDTO.getCompany()));
             jobPost.setRecruiter(convertToRecruiterModel(jobPostDTO.getRecruiter()));
@@ -102,7 +127,8 @@ public class JobPostService {
             updatedJobPostDTO.setId(updatedJobPost.getId());
             updatedJobPostDTO.setTitle(updatedJobPost.getTitle());
             updatedJobPostDTO.setDescription(updatedJobPost.getDescription());
-            // Assuming the associated entities (Category, Company, Recruiter) have appropriate DTO classes
+            // Assuming the associated entities (Category, Company, Recruiter) have
+            // appropriate DTO classes
             updatedJobPostDTO.setCategory(convertToCategoryDTO(updatedJobPost.getCategory()));
             updatedJobPostDTO.setCompany(convertToCompanyDTO(updatedJobPost.getCompany()));
             updatedJobPostDTO.setRecruiter(convertToRecruiterDTO(updatedJobPost.getRecruiter()));

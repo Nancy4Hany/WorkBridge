@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.job.joblistingservice.DTO.JobPostDTO;
 import com.example.job.joblistingservice.services.JobPostService;
@@ -23,15 +24,20 @@ public class JobPostController {
   
     }
 
-   
-
     @PostMapping
     public JobPostDTO createJobPost(@RequestBody JobPostDTO jobPostDTO) {
         return jobPostService.createJobPost(jobPostDTO);
     }
+    
     @GetMapping
     public List<JobPostDTO> getAllJobPosts() {
         return jobPostService.getAllJobPosts();
+    }
+
+    @GetMapping("/search")
+    public JobPostDTO searchJobs(@RequestParam(name = "search") String search)
+    {
+        return jobPostService.searchJobs(search);
     }
 
     @GetMapping("/{id}")
