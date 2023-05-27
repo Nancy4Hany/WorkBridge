@@ -1,51 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-<<<<<<< HEAD:job_listing_event_bus/pom.xml
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.12</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
-	<groupId>com.example.job_listing_event_bus</groupId>
-	<artifactId>job_listing_event_bus</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>job_listing_event_bus</name>
-	<description>Demo project for Spring Boot</description>
-	<properties>
-		<java.version>17</java.version>
-	</properties>
-	<dependencies>
-	
-
-
-
-		
-	<!-- starter -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<!-- lombok -->
-<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.20</version>
-    <scope>provided</scope>
-</dependency>
-<!-- test -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-=======
->>>>>>> d789cda8cf7eb5f5dad177a56ba87fe1d128bfcb:resume-management-service/pom.xml
-
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd%22%3E">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -53,13 +8,13 @@
         <version>2.7.12</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example.resume</groupId>
-    <artifactId>resume-management-system</artifactId>
+    <groupId>com.example.job_listing_event_bus</groupId>
+    <artifactId>job_listing_event_bus</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>resume-management-system</name>
+    <name>job_listing_event_bus</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-        <java.version>20</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
@@ -89,18 +44,19 @@
         </dependency>
         <dependency>
             <groupId>org.apache.tika</groupId>
-            <artifactId>tika</artifactId>
-            <version>1.28.3</version>
-            <type>pom</type>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.tika</groupId>
             <artifactId>tika-parsers</artifactId>
             <version>1.17</version>
         </dependency>
         <dependency>
-            <groupId>xml-apis</groupId>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-parsers</artifactId>
+            <version>1.28.3</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
+            <version>1.4.01</version>
         </dependency>
     </dependencies>
 
