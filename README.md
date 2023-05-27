@@ -2,7 +2,7 @@
   <img src="https://media.giphy.com/media/h2NRnIIEw6tv9emZSc/giphy.gif" width="380" height="380" alt="Giphy GIF">
 </p>
 
-# WORKBREDGE
+# WORKBRIDGE
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -51,7 +51,14 @@ _if you want to run the ReactJs app, type `npm start` <br>
 
 
  ## :octocat: Git & GitHub 
-to be done 
+### adding your work from the working branch area to the remote branch 
+- `git checkout <your-branch-name>` <br> 
+- Merge any changes from your working branch into the branch you want to push to using `git merge <working-branch>` <br> 
+- if there are merge conflicts arised resolve them. <br>
+- now you can push your work to the meant branch <br>
+:one: `git add .`<br>
+:two: `git commit -m "<your-message>"` make sure to copy the commit message structure from Jira <br>
+:three: `git push` <br>
 
 
 ## :eyeglasses: Team Work 
@@ -67,7 +74,7 @@ to be done
 
 ### _Jira collaboration_
 - each sprint (meeting) we will be doing a peer review on each others code 
-- each sprint (meeting) we will push our work to the meant branches/
+- each sprint (meeting) we will push our work to the meant branches and merging them with the main branch ( deliver the version ) 
 - each sprint (meeting) we will be estimating the tasks duration, effort level by using the poker cards way <br>
 ..to be completed..
 
