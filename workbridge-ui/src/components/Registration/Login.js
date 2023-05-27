@@ -38,15 +38,21 @@ export default function SignInSide() {
   
     axios.post("/auth/login", formData)
       .then(response => {
-        console.log("Succesful Login" , response.data);
+        console.log("Successful Login", response.data);
+        const message = response.data.message;
         
+        if (message === "Hello, recruiter!") {
+          navigate('/recruiterhome');
+        } else if (message === "Hello, user!") {
+          navigate('/applicanthome');
+        }
       })
       .catch(error => {
-        console.error("error", error);
+        console.error("Error", error);
         // Handle login error
       });
   };
-
+  
 
   return (
     <Container component="main" maxWidth="lg">
@@ -144,7 +150,7 @@ export default function SignInSide() {
                     </Link>
                   </Grid>
                   <Grid item>
-                    <Link href="Registration" variant="body2">
+                    <Link href="Sign-up" variant="body2">
                       {"Don't have an account? Sign Up"}
                     </Link>
                   </Grid>

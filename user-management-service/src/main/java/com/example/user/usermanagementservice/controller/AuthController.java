@@ -58,25 +58,37 @@ public class AuthController {
     }
 
     // This method handles the user login endpoint
-    @PostMapping("/login")
-    public ResponseEntity<?> login(@RequestBody Map<String, String> body) {
-        String username = body.get("username");
-        User user = this.userRepository.findByUsername(username).orElse(null);
-        if (user == null) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Email not Exists");
-        }
-        String password = body.get("password");
-        String hashedPassword = user.getPassword();
-        boolean matched = this.bCryptPasswordEncoder.matches(password, hashedPassword);
-        if (matched) {
-            String token = this.jwtService.generateToken(user.getId());
-            Map<String, Object> res = new HashMap<>();
-            res.put("token", token);
-            res.put("message", "Login Success");
-            return ResponseEntity.ok(res);
-        } else {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Password not match");
-        }
+   // ...
+
+@PostMapping("/login")
+public ResponseEntity<?> login(@RequestBody Map<String, String> body) {
+    String username = body.get("username");
+    User user = this.userRepository.findByUsername(username).orElse(null);
+    if (user == null) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Email not Exists");
     }
+
+    String password = body.get("password");
+    String hashedPassword = user.getPassword();
+    boolean matched = this.bCryptPasswordEncoder.matches(password, hashedPassword);
+    if (matched) {
+        String token = this.jwtService.generateToken(user.getId());
+        Map<String, Object> res = new HashMap<>();
+        res.put("token", token);
+        
+        if (user.getRole().equals("RECRUITER")) {
+            res.put("message", "Hello, recruiter!");
+        } else if (user.getRole().equals("USER")) {
+            res.put("message", "Hello, user!");
+        }
+        
+        return ResponseEntity.ok(res);
+    } else {
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Password not match");
+    }
+}
+
+// ...
+
     
 }

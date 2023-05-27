@@ -25,7 +25,7 @@ import Room from './components/VideoCallSystem/Room';
 // testing files 
 import RecruiterHomeTest from './components/Tests/RecruiterHomeTest';
 import SeekerHomeTest from './components/Tests/SeekerHomeTest';
-import ApplicationsTable from './components/ApplicationsTable';
+import ApplicationsTable from './components/Submissions/ApplicationsTable';
 // import PostNewJob from './components/JobPosting/PostNewJob'; 
 import CenterLayout from './components/Posts/PostsForApplicant';
 import PostsForRecruiter from './components/Posts/PostsForRecruiter';

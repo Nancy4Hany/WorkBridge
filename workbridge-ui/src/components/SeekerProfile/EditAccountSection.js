@@ -35,7 +35,7 @@ export default function EditAccountSection() {
                         <polyline points="22,6 12,13 2,6"></polyline>
                     </svg>
                 </div>
-                <div class="absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase text-gray-500">Message</div>
+                <div class="absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase text-gray-500">Background </div>
             </div>
             <div class="flex-auto border-t-2 transition duration-500 ease-in-out border-gray-300"></div>
             <div class="flex items-center text-gray-500 relative">

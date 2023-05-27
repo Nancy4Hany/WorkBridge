@@ -35,7 +35,7 @@ export default function EditPersonalSection() {
                         <polyline points="22,6 12,13 2,6"></polyline>
                     </svg>
                 </div>
-                <div class="absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase text-gray-500">Message</div>
+                <div class="absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase text-gray-500">Background</div>
             </div>
             <div class="flex-auto border-t-2 transition duration-500 ease-in-out border-gray-300"></div>
             <div class="flex items-center text-gray-500 relative">
@@ -89,12 +89,6 @@ export default function EditPersonalSection() {
             </div>
         </div>
         <div class="flex p-2 mt-4">
-            <button class="text-base hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
-        hover:bg-gray-200  
-        bg-gray-100 
-        text-gray-700 
-        border duration-200 ease-in-out 
-        border-gray-600 transition">Previous</button>
             <div class="flex-auto flex flex-row-reverse">
               <Link href="ProfileEditAccount">  <button type='submit' class="text-base ml-2  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 rounded font-bold cursor-pointer 
         hover:bg-teal-600  

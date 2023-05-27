@@ -1,13 +1,17 @@
 import React from "react";
-
+import  ApplicantAppBar from '../layout/ApplicantAppBar';
+import  LeftSideLayout from '../layout/LeftSideLayout'; 
+import  RightSideLayout from '../layout/RightSideLayout';
 export default function Profile() {
     // UserService.getUser();
 
     return (
-        <div id="profile-container">
-            <img className="w-40 h-18 rounded-full" src="../profiletest.png" alt="Rounded avatar" />
+       <>
+        <ApplicantAppBar></ApplicantAppBar>
+        <div id="profile-container" className="flex justify-center items-center">
+            {/* <img className="w-40 h-18 rounded-full" src="../profiletest.png" alt="Rounded avatar" /> */}
             <div className="w-full md:w-9/12 mx-2 h-64">
-                <div className="bg-white p-3 shadow-sm rounded-sm">
+                {/* <div className="bg-white p-3 shadow-sm rounded-sm">
                     <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
                         <span className="text-green-500">
                             <svg className="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,7 +36,7 @@ export default function Profile() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="m-32 p-3 bg-gray-400 rounded-lg shadow-xl border border-neutral-700">
                     <div className="w-full h-[250px]">
@@ -204,8 +208,16 @@ export default function Profile() {
             </div>
         </div>
     </div>
+    <a href="Edit-personal-info">
+                        <button 
+                            className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-purple-700 rounded-md hover:bg-purple-600 focus:outline-none focus:bg-purple-600">
+
+                            Edit Profile
+                        </button>
+                        </a>
 </div>
 </div>
 </div>
+</>
     )
 }

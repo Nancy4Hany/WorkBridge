@@ -17,7 +17,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import GroupsIcon from '@mui/icons-material/Groups';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-
+import EditIcon from '@mui/icons-material/Edit';
 
 
 
@@ -130,7 +130,7 @@ return(
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 <PostAddIcon> </PostAddIcon>
-                <a href="url">post a job</a>
+                <a href="Post-a-job">post a job</a>
                 
 
               </Button>
@@ -142,16 +142,25 @@ return(
               >
                 <VideoCallIcon> </VideoCallIcon>
                
-                <a href="url">Creat a room</a>
+                <a href="Lobby ">Creat a room</a>
 
               </Button>
+          
+                <Button
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  <EditIcon />
+                  <a href="Schedule-an-interview">Schedule an Interview</a>
+                </Button>
+
               <Button
                 
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 <CalendarMonthIcon> </CalendarMonthIcon>
-                <a href="url">my interview schedule</a>
+                <a href="Table-of-interviews">my interview schedules</a>
 
               </Button>
 
