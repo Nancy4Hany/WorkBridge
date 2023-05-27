@@ -22,6 +22,9 @@ import ScheduleInterview from './components/Interview/ScheduleInterview';
 // video call
 import Lobby from './components/VideoCallSystem/Lobby';
 import Room from './components/VideoCallSystem/Room';
+// testing files 
+import RecruiterHomeTest from './components/Tests/RecruiterHomeTest';
+import SeekerHomeTest from './components/Tests/SeekerHomeTest';
 
 
 function App() {
@@ -30,6 +33,9 @@ function App() {
       {/* Registration routes  */}
       <Route path='/' element={<Login />} />
       <Route path='/Sign-up' element={<SignUp />} />
+      {/* testing routes */}
+      <Route path='/RecruiterHomeTest' element={<RecruiterHomeTest />} />
+      <Route path='/SeekerHomeTest' element={<SeekerHomeTest />} />
       {/* video call routes */}
       <Route path='/Lobby' element={<Lobby />} />
       <Route path='Room' element={<Room />} />
