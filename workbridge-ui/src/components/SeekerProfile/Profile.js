@@ -1,56 +1,54 @@
 import React from "react";
-import UserService from "../services/UserService";
 
 export default function Profile() {
-
-        UserService.getUser();
+    // UserService.getUser();
 
     return (
-<div id="profile container">
-<img class="w-40 h-18 rounded-full" src="../profiletest.png" alt="Rounded avatar"/>
-<div class="w-full md:w-9/12 mx-2 h-64">
-    <div class="bg-white p-3 shadow-sm rounded-sm">
-        <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
-            <span class="text-green-500">
-                <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-            </span>
-            <span class="tracking-wide">About</span>
-        </div>
-        <div class="text-gray-700">
-            <div class="grid md:grid-cols-2 text-sm">
-                <div class="grid grid-cols-2">
-                    
-                    <div class="px-4 py-2 font-semibold">First Name</div>
-                    <div class="px-4 py-2">Hamza</div>
+        <div id="profile-container">
+            <img className="w-40 h-18 rounded-full" src="../profiletest.png" alt="Rounded avatar" />
+            <div className="w-full md:w-9/12 mx-2 h-64">
+                <div className="bg-white p-3 shadow-sm rounded-sm">
+                    <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
+                        <span className="text-green-500">
+                            <svg className="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </span>
+                        <span className="tracking-wide">About</span>
+                    </div>
+                    <div className="text-gray-700">
+                        <div className="grid md:grid-cols-2 text-sm">
+                            <div className="grid grid-cols-2">
+                                <div className="px-4 py-2 font-semibold">First Name</div>
+                                <div className="px-4 py-2">Hamza</div>
+                            </div>
+                            <div className="grid grid-cols-2">
+                                <div className="px-4 py-2 font-semibold">Last Name</div>
+                                <div className="px-4 py-2">Mohamed</div>
+                            </div>
+                            <div className="grid grid-cols-2">
+                                <div className="px-4 py-2 font-semibold">Gender</div>
+                                <div className="px-4 py-2">Male</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">Last Name</div>
-                    <div class="px-4 py-2">Mohamed</div>
-                </div>
-                <div class="grid grid-cols-2">
-                    <div class="px-4 py-2 font-semibold">Gender</div>
-                    <div class="px-4 py-2">Male</div>
 
-<div className="m-32 p-3 bg-gray-400 rounded-lg shadow-xl border border-neutral-700">
-<div class="w-full h-[250px]">
-                <img src="https://vojislavd.com/ta-template-demo/assets/img/profile-background.jpg" class="w-full h-full rounded-tl-lg rounded-tr-lg"/>
-            </div>
-            <div class="flex flex-col items-center -mt-20">
-                <img src="https://vojislavd.com/ta-template-demo/assets/img/profile.jpg" class="w-40 border-4 border-white rounded-full"/>
-                <div class="flex items-center space-x-2 mt-2">
-                    <p class="text-2xl">Amanda Ross</p>
-                    <span class="bg-blue-500 rounded-full p-1" title="Verified">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-100 h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                    </span>
-
-                </div>
-                <p class="text-gray-700">Senior Software Engineer at Tailwind CSS</p>
+                <div className="m-32 p-3 bg-gray-400 rounded-lg shadow-xl border border-neutral-700">
+                    <div className="w-full h-[250px]">
+                        <img src="https://vojislavd.com/ta-template-demo/assets/img/profile-background.jpg" className="w-full h-full rounded-tl-lg rounded-tr-lg" />
+                    </div>
+                    <div className="flex flex-col items-center -mt-20">
+                        <img src="https://vojislavd.com/ta-template-demo/assets/img/profile.jpg" className="w-40 border-4 border-white rounded-full" />
+                        <div className="flex items-center space-x-2 mt-2">
+                            <p className="text-2xl">Amanda Ross</p>
+                            <span className="bg-blue-500 rounded-full p-1" title="Verified">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="text-gray-100 h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <p className="text-gray-700">Senior Software Engineer at Tailwind CSS.</p>
                 <p class="text-sm text-gray-500">New York, USA</p>
             </div>
 <div class="container mx-auto my-5 p-5 bg-gray-400">
@@ -206,6 +204,8 @@ export default function Profile() {
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
     )
 }

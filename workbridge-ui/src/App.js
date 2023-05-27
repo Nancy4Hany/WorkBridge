@@ -25,7 +25,12 @@ import Room from './components/VideoCallSystem/Room';
 // testing files 
 import RecruiterHomeTest from './components/Tests/RecruiterHomeTest';
 import SeekerHomeTest from './components/Tests/SeekerHomeTest';
-
+import ApplicationsTable from './components/ApplicationsTable';
+// import PostNewJob from './components/JobPosting/PostNewJob'; 
+import CenterLayout from './components/Posts/PostsForApplicant';
+import PostsForRecruiter from './components/Posts/PostsForRecruiter';
+import ApplicantHome from './components/Home/ApplicantHome';
+import RecruiterHome from './components/Home/RecruiterHome';
 
 function App() {
   return (
@@ -55,7 +60,12 @@ function App() {
       <Route path='/Edit-background-info' element={<EditBackgroundSection />} />
       <Route path='/Edit-account-info' element={<EditAccountSection />} />
       <Route path='/Edit-personal-info' element={<EditPersonalSection />} />
-   
+      <Route path='/ApplicationsTable' element={<ApplicationsTable />} />
+      <Route path='/CenterLayout' element={<CenterLayout />} />
+      <Route path='/PostsForRecruiter' element={<PostsForRecruiter />} />
+      <Route path='/ApplicantHome' element={<ApplicantHome />} />
+      <Route path='/RecruiterHome' element={<RecruiterHome />} />
+      {/* <Route path='/Post-a-job' element={<PostNewJob />} /> */}
     </Routes>
 
   )

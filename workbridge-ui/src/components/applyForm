@@ -1,0 +1,44 @@
+import TextField from '@mui/material/TextField';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import IconButton from '@mui/material/IconButton';
+import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
+import PublishIcon from '@mui/icons-material/Publish';
+
+export default function JobOfferForm() {
+  return (
+<div
+          id="form container"
+          className="flex flex-col items-center justify-center px-6  rounded-lg"
+          style={{backgroundColor:'#f8e5ee'}}>
+        
+          <div style={{border:'1px solid #B370B0',padding:'2%',alignItems:'center',marginTop:'3%',marginBottom:'3%'}}>
+          <div id ="title container">
+           <TextField id="outlined-basic" label="Title" variant="outlined" />
+           </div>
+
+          <div id="job description cntainer">
+           
+           <TextField id="outlined-basic" label="job decription" variant="outlined" />
+          </div>
+          <div id="required skilld container">
+           <TextField id="outlined-basic" label="skills" variant="outlined" />
+            </div>
+            <div id="field of job">
+           <TextField id="outlined-basic" label="field" variant="outlined" />
+            </div>
+            <div id="position">
+          <TextField id="outlined-basic" label="position" variant="outlined" />
+            </div>
+            <div id ="img">
+          Add a picture about the job
+          <IconButton aria-label="delete">
+          <AddPhotoAlternateIcon> </AddPhotoAlternateIcon>
+          </IconButton>
+            </div>
+            <IconButton aria-label="delete">
+              Publish your job offer
+          <PublishIcon> </PublishIcon>
+          </IconButton>
+          </div>
+          </div>)
+}

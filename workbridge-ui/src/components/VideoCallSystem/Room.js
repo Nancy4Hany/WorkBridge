@@ -329,7 +329,7 @@ let toggleScreen = async (e) => {
 
         let videoFrames = document.getElementsByClassName('video__container');
         for(let i = 0; videoFrames.length > i; i++){
-            if(videoFrames[i].id != userIdInDisplayFrame){
+            if(videoFrames[i].id !== userIdInDisplayFrame){
               videoFrames[i].style.height = '100px';
               videoFrames[i].style.width = '100px';
             }
@@ -438,7 +438,7 @@ let expandVideoFrame = (e)=> {
 
   for(let i=0; videoFrames.length >i; i++){
 
-   if(videoFrames[i].id!= userIdInDisplayFrame){
+   if(videoFrames[i].id!== userIdInDisplayFrame){
     videoFrames[i].style.height = '100px '
     videoFrames[i].style.width = '100px '
    }
