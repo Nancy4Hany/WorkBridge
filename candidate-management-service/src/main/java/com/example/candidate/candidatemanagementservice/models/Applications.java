@@ -10,7 +10,7 @@ import javax.persistence.Entity;
 @Entity
 public class Applications {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
@@ -19,6 +19,10 @@ public class Applications {
     @ManyToOne
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
+
+    @ManyToOne
+    @JoinColumn(name = "jobOffer_id", referencedColumnName = "id")
+    private JobOffer post;
 
     public Long getId() {
         return id;
@@ -66,6 +70,14 @@ public class Applications {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public JobOffer getPost() {
+        return post;
+    }
+
+    public void setPost(JobOffer post) {
+        this.post = post;
     }
 
 }
