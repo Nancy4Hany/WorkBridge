@@ -74,12 +74,12 @@ public class ExperienceController {
     }
 
     @DeleteMapping("/selected/{experienceID}")
-    public ResponseEntity deleteExperience(@PathVariable("experienceID") Long experienceID)
+    public ResponseEntity deleteExperience(@PathVariable("experienceID") Long experienceID) throws Exception
     {
         Experience education = this.experienceRepository.findById(experienceID).orElse(null);
         if(education == null){
             
-            return new ResponseEntity("Not Found", HttpStatus.NOT_FOUND);
+            throw new Exception("Experience not found");
         }
 
         this.experienceRepository.delete(education);

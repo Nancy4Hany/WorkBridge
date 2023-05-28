@@ -29,7 +29,7 @@ public class UserController {
     private UserRepository userRepository;
 
     @PostMapping("")
-    public ResponseEntity createUser(@RequestBody Map<String, String> body) {
+    public ResponseEntity addUser(@RequestBody Map<String, String> body) {
         User user = new User();
         user.setEmail(body.get("Email"));
         user.setFirstName(body.get("First name"));
@@ -52,13 +52,13 @@ public class UserController {
 
     @PutMapping("/edit/{userID}")
     public ResponseEntity updateUser(@PathVariable("userID") Long userID, @RequestBody Map<String, String> body)
-    {
+            throws Exception {
         User user = this.userRepository.findById(userID).orElse(null);
         if (user == null) {
 
-            return new ResponseEntity("Not Found", HttpStatus.NOT_FOUND);
-        }
+            throw new Exception("No user found");
 
+        }
         user.setEmail(body.get("Email"));
         user.setFirstName(body.get("First name"));
         user.setLastName(body.get("Last name"));
@@ -77,7 +77,6 @@ public class UserController {
         this.userRepository.save(user);
 
         return new ResponseEntity(user, HttpStatus.OK);
-
 
     }
 

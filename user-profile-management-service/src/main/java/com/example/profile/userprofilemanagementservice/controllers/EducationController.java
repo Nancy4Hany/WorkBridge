@@ -70,12 +70,12 @@ public class EducationController {
     }
 
     @DeleteMapping("/selected/{educationID}")
-    public ResponseEntity deleteEducation(@PathVariable("educationID") Long educationID)
+    public ResponseEntity deleteEducation(@PathVariable("educationID") Long educationID) throws Exception
     {
         Education education = this.educationRepository.findById(educationID).orElse(null);
         if(education == null){
             
-            return new ResponseEntity("Not Found", HttpStatus.NOT_FOUND);
+            throw new Exception("Education not found");
         }
 
         this.educationRepository.delete(education);
