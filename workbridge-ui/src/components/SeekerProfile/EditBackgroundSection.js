@@ -8,7 +8,7 @@ export default function EditBackgroundSection() {
         <div class="flex items-center">
             <div class="flex items-center text-teal-600 relative bg-light-green rounded-full">
                 <div class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 border-teal-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#000000" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bookmark ">
                         <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                     </svg>
                 </div>
@@ -17,12 +17,7 @@ export default function EditBackgroundSection() {
             <div class="flex-auto border-t-4 transition duration-150 ease-out hover:ease-in border-dark-green"></div>
             <div class="flex items-center text-white relative">
                 <div class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 bg-light-green rounded-full-600 border-teal-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus ">
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="8.5" cy="7" r="4"></circle>
-                        <line x1="20" y1="8" x2="20" y2="14"></line>
-                        <line x1="23" y1="11" x2="17" y2="11"></line>
-                    </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="#000000" class="bi bi-person-plus-fill" viewBox="0 0 16 16"> <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/> <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/> </svg>
                 </div>
                 <div class="absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase text-teal-600">Account</div>
             </div>
@@ -35,12 +30,8 @@ export default function EditBackgroundSection() {
             </div>
             <div class="flex-auto border-t-4 transition duration-500 ease-in-out border-dark-green"></div>
             <div class="flex items-center text-gray-500 relative">
-                <div class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 border-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-database ">
-                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                    </svg>
+                <div class="rounded-full transition duration-500 ease-in-out h-12 w-12 py-3 border-2 border-white bg-white">
+                <svg fill="#000000" width = '100%' height='100%' viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m16 0c8.836556 0 16 7.163444 16 16s-7.163444 16-16 16-16-7.163444-16-16 7.163444-16 16-16zm0 2c-7.7319865 0-14 6.2680135-14 14s6.2680135 14 14 14 14-6.2680135 14-14-6.2680135-14-14-14zm6.6208153 9.8786797c.3905243.3905242.3905243 1.0236892 0 1.4142135l-7.0710678 7.0710678c-.3626297.3626297-.9344751.3885319-1.3269928.0777064l-.0872208-.0777064-4.24264068-4.2426407c-.39052429-.3905242-.39052429-1.0236892 0-1.4142135.39052428-.3905243 1.02368928-.3905243 1.41421358 0l3.5348268 3.5348268 6.3646681-6.3632539c.3905243-.3905243 1.0236893-.3905243 1.4142136 0z"></path></g></svg>
                 </div>
                 <div class="absolute top-0 -ml-10 text-center mt-16 w-32 text-xs font-medium uppercase text-gray-500">Confirm</div>
             </div>
@@ -54,25 +45,25 @@ export default function EditBackgroundSection() {
                 <div class="w-full flex-1 mx-2 svelte-1l8159u">
                 <label className='font-bold mt-8 uppercase text-sm'>University Name</label>
                     <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                        <input type = 'text' placeholder="University Name" class="p-1 px-2 appearance-none outline-none w-full text-gray-800"/> </div>
+                        <input type = 'text' placeholder="University Name" class="p-1 px-2 appearance-none outline-none w-full text-black"/> </div>
                 </div>
                 <div class="w-full flex-1 mx-2 svelte-1l8159u">
                 <label className='font-bold mt-8 uppercase text-sm'>Major</label>
                     <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
                        
-                        <input placeholder="Major" class="p-1 px-2 appearance-none outline-none w-full text-gray-800"/> </div>
+                        <input placeholder="Major" class="p-1 px-2 appearance-none outline-none w-full text-black placeholder-gray-600 focus:placeholder-gray-500"/> </div>
                 </div>
             </div>
             <div class="flex flex-col md:flex-row">
                 <div class="w-full mx-2 flex-1 svelte-1l8159u">
                     <div class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">Start Date</div>
                     <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                        <input type='date' placeholder="06/09/2020" class="p-1 px-2 appearance-none outline-none w-full text-gray-800"/> </div>
+                        <input type='date' placeholder="06/09/2020" class="p-1 px-2 appearance-none outline-none w-full text-black placeholder-gray-600"/> </div>
                 </div>
                 <div class="w-full mx-2 flex-1 svelte-1l8159u">
                     <div class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"> End Date</div>
                     <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                        <input type='date'placeholder="10/07/2024" class="p-1 px-2 appearance-none outline-none w-full text-gray-800"/> </div>
+                        <input type='date'placeholder="10/07/2024" class="p-1 px-2 appearance-none outline-none w-full text-black placeholder-gray-600"/> </div>
                 </div>
             </div>
             <div class="font-bold text-4xl text-purple mb-4 pt-12 pb-12 leading-8 h-6 mx-2 mt-3">Experience: </div>
@@ -81,25 +72,25 @@ export default function EditBackgroundSection() {
                 <div class="w-full flex-1 mx-2 svelte-1l8159u">
                 <label className='font-bold mt-8 uppercase text-sm'>Organisation Name</label>
                     <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                        <input type = 'text' placeholder="e.g. ALX" class="p-1 px-2 appearance-none outline-none w-full text-gray-800"/> </div>
+                        <input type = 'text' placeholder="e.g. ALX" class="p-1 px-2 appearance-none outline-none w-full text-black"/> </div>
                 </div>
                 <div class="w-full flex-1 mx-2 svelte-1l8159u">
                 <label className='font-bold mt-8 uppercase text-sm'>Job Title</label>
                     <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
                        
-                        <input placeholder="e.g. Intern" class="p-1 px-2 appearance-none outline-none w-full text-gray-800"/> </div>
+                        <input placeholder="e.g. Intern" class="p-1 px-2 appearance-none outline-none w-full text-black"/> </div>
                 </div>
             </div>
             <div class="flex flex-col md:flex-row">
                 <div class="w-full mx-2 flex-1 svelte-1l8159u">
                     <div class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">Start Date</div>
                     <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                        <input type='date' placeholder="06/09/2020" class="p-1 px-2 appearance-none outline-none w-full text-gray-800"/> </div>
+                        <input type='date' placeholder="06/09/2020" class="p-1 px-2 appearance-none outline-none w-full text-black placeholder-gray-600"/> </div>
                 </div>
                 <div class="w-full mx-2 flex-1 svelte-1l8159u">
                     <div class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"> End Date</div>
                     <div class="bg-white my-2 p-1 flex border border-gray-200 rounded svelte-1l8159u">
-                        <input type='date'placeholder="10/07/2024" class="p-1 px-2 appearance-none outline-none w-full text-gray-800"/> </div>
+                        <input type='date'placeholder="10/07/2024" class="p-1 px-2 appearance-none outline-none w-full text-black placeholder-gray-600"/> </div>
                 </div>
             </div>
         </div>
