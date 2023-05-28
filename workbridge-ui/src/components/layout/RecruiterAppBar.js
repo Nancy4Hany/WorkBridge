@@ -154,7 +154,7 @@ return(
                   <a href="Schedule-an-interview">Schedule an Interview</a>
                 </Button>
 
-              <Button
+              {/* <Button
                 
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -162,7 +162,7 @@ return(
                 <CalendarMonthIcon> </CalendarMonthIcon>
                 <a href="Table-of-interviews">my interview schedules</a>
 
-              </Button>
+              </Button> */}
 
             
           </Box>

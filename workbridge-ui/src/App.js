@@ -10,6 +10,8 @@ import EditPersonalSection from './components/SeekerProfile/EditPersonalSection'
 import EditAccountSection from './components/SeekerProfile/EditAccountSection';
 import EditBackgroundSection from './components/SeekerProfile/EditBackgroundSection';
 import ConfirmEdits from './components/SeekerProfile/ConfirmEdits';
+// apply form
+import JobOfferForm from './components/Apply/applyForm';
 // cv
 import CVContent from './components/ViewCV/CV';
 // post job
@@ -66,6 +68,8 @@ function App() {
       <Route path='/ApplicantHome' element={<ApplicantHome />} />
       <Route path='/RecruiterHome' element={<RecruiterHome />} />
       {/* <Route path='/Post-a-job' element={<PostNewJob />} /> */}
+      <Route path='/JobOfferForm' element={<JobOfferForm />} />
+
     </Routes>
 
   )

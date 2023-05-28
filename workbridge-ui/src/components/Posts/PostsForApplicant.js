@@ -107,7 +107,7 @@ export default function CenterLayout() {
 
                             </CardContent>
                             <CardActions disableSpacing>
-                                <Button color="secondary">Apply</Button>
+                                <Button href={applyForm} color="secondary">Apply</Button>
                             </CardActions>
 
                         </Card>

@@ -29,6 +29,7 @@ public class JobPostController {
     public JobPostDTO createJobPost(@RequestBody JobPostDTO jobPostDTO) {
         return jobPostService.createJobPost(jobPostDTO);
     }
+    
     @GetMapping
     public List<JobPostDTO> getAllJobPosts() {
         return jobPostService.getAllJobPosts();

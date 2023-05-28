@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CandidateManagementServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.candidate.candidatemanagementservice.CandidateManagementServiceApplication",
+            "projectName": "candidate-management-service"
+        },
+        {
+            "type": "java",
+            "name": "EmailServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.email_service.email_service.EmailServiceApplication",
+            "projectName": "email_service"
+        },
+        {
+            "type": "java",
+            "name": "FeedbackServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.feedback.feedbackservice.FeedbackServiceApplication",
+            "projectName": "feedback-service"
+        },
+        {
+            "type": "java",
+            "name": "JobListingServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.job.joblistingservice.JobListingServiceApplication",
+            "projectName": "job-listing-service"
+        },
+        {
+            "type": "java",
+            "name": "JobSearchingServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.searching.jobsearchingservice.JobSearchingServiceApplication",
+            "projectName": "job-searching-service"
+        },
+        {
+            "type": "java",
+            "name": "UserManagementServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.user.usermanagementservice.UserManagementServiceApplication",
+            "projectName": "user-management-service"
+        },
+        {
+            "type": "java",
+            "name": "UserProfileManagementServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.profile.userprofilemanagementservice.UserProfileManagementServiceApplication",
+            "projectName": "user-profile-management-service"
+        },
+        {
+            "type": "java",
+            "name": "UserRecruiterEventBusApplication",
+            "request": "launch",
+            "mainClass": "com.example.user_recruiter_event_bus.userrecruitereventbus.UserRecruiterEventBusApplication",
+            "projectName": "user-recruiter-event-bus"
+        }
+    ]
+}
